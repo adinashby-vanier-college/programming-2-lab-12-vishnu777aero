@@ -11,10 +11,12 @@ import org.junit.jupiter.api.Test;
 class LabTwelveTests {
 
     private static CatAndMouse game;
+    private static Palindrome palindrome;
 
     @BeforeAll
     static void setup() {
         game = new CatAndMouse(0, 0, 0);
+        palindrome = new Palindrome();
     }
 
     @Test
@@ -34,4 +36,15 @@ class LabTwelveTests {
         assertEquals(game.winner(), "Cat B");
     }
 
+    @Test
+    void PalindromeTest1() {
+        palindrome.setValue("Malayalam");
+        assertEquals(true, palindrome.isPalindrome());
+    }
+
+    @Test
+    void PalindromeTest2() {
+        palindrome.setValue("English");
+        assertEquals(false, palindrome.isPalindrome());
+    }
 }
