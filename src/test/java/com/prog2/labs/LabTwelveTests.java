@@ -1,6 +1,6 @@
 package com.prog2.labs;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,8 +9,8 @@ import org.junit.jupiter.api.Test;
  */
 class LabTwelveTests {
 
-	@Test
-	void test1()  {
-  }
-	
+    @Test
+    void test1() {
+    }
+
 }
