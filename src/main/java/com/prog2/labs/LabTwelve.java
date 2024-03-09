@@ -12,6 +12,11 @@ public class LabTwelve {
      *
      */
     public static void main(String[] args) {
+        CatAndMouse game1 = new CatAndMouse(0,1,0);
+        CatAndMouse game2 = new CatAndMouse(7,4,5);
+        CatAndMouse game3 = new CatAndMouse(2,0,1);
+        
+        System.out.println(game1.winner() + " " + game2.winner() + " " + game3.winner());
     }
 
 }

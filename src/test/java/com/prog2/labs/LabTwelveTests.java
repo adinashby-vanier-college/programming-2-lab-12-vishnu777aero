@@ -1,5 +1,6 @@
 package com.prog2.labs;
 
+import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -9,8 +10,28 @@ import org.junit.jupiter.api.Test;
  */
 class LabTwelveTests {
 
+    private static CatAndMouse game;
+
+    @BeforeAll
+    static void setup() {
+        game = new CatAndMouse(0, 0, 0);
+    }
+
     @Test
-    void test1() {
+    void CatAndMouseTest1() {
+        assertEquals(game.winner(), "Mouse");
+    }
+
+    @Test
+    void CatAndMouseTest2() {
+        game.setPos(0, 1, 0);
+        assertEquals(game.winner(), "Cat A");
+    }
+
+    @Test
+    void CatAndMouseTest3() {
+        game.setPos(7, 4, 5);
+        assertEquals(game.winner(), "Cat B");
     }
 
 }

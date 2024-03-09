@@ -9,12 +9,17 @@ package com.prog2.labs;
  * @author Dell
  */
 public class CatAndMouse {
-
     int posCatA;
     int posCatB;
     int posMouse;
 
     CatAndMouse(int posCatA, int posCatB, int posMouse) {
+        this.posCatA = posCatA;
+        this.posCatB = posCatB;
+        this.posMouse = posMouse;
+    }
+    
+    public void setPos(int posCatA, int posCatB, int posMouse) {
         this.posCatA = posCatA;
         this.posCatB = posCatB;
         this.posMouse = posMouse;
